@@ -9,7 +9,7 @@ zproot is a clean-room Zig reimplementation of PRoot. It uses Linux `ptrace()` t
 | Repository | Description | Status |
 |---|---|---|
 | [zproot](https://github.com/zproot/zproot) | ptrace tracer core, written in Zig | active |
-| [zproot-android](https://github.com/zproot/zproot-android) | Android APK, Kotlin frontend | planned |
+| [zproot-android](https://github.com/zproot/zproot-android) | Android APK, Kotlin frontend | active |
 | [zproot-compositor](https://github.com/zproot/zproot-compositor) | Wayland compositor for Android | planned |
 
 ## Status
