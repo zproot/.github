@@ -16,7 +16,7 @@ zproot is a clean-room Zig reimplementation of PRoot. It uses Linux `ptrace()` t
 
 M1 through M8 are complete: ptrace syscall loop, argument reading, path rewriting, `execve` interception, `openat2`/`statx`, Android seccomp handler, aarch64-linux-android static-pie build, and a working Android APK.
 
-M9 (rootfs prefix, Alpine install) is working on device. M10 (PT_INTERP loader for dynamically linked binaries) is in progress.
+M9 (rootfs prefix, Alpine install) is working on device. M10 (`PT_INTERP` loader for dynamically linked binaries) is in progress.
 
 The APK builds, installs, and runs the tracer on a real device. Alpine downloads and extracts to the app's private storage. Static binaries run. Path rewriting is verified end to end. Dynamically linked binaries — `apk`, `apt`, `pacman`, `gcc`, `cargo` — still fail because the kernel cannot resolve `PT_INTERP` on Android.
 
